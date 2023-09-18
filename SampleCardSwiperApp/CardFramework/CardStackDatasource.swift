@@ -6,7 +6,7 @@
 
 import Foundation
 
-/// Used for providing data to the `CardSwiper`.
+/// Used for providing data to the `CardStack`.
 public protocol CardStackDatasource: AnyObject {
     
     func numberOfCards(cardStackView: CardStackView) -> Int

@@ -16,7 +16,7 @@ implementation.
 ```swift
 import CardStack
 
-class SampleViewController: UIViewController, CardStackDelegate, CardStackDatasource {
+class SampleViewController: UIViewController, CardStackDatasource {
 
     @IBOutlet private var cardStack: CardStack!
 
@@ -93,7 +93,6 @@ class ViewController: UIViewController, CardStackDelegate {
 
         cardStack.delegate = self
     }
-    
     
     func didEndScroll(cardStackView: CardStackView) {
     

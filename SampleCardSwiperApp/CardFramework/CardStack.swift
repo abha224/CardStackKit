@@ -39,21 +39,21 @@ public class CardStack: UIView {
     /// The inset (spacing) at the top for the cards. Default is 160.
     @IBInspectable public var topInset: CGFloat = 160 {
         didSet {
-            setCardSwiperInsets()
+            setCardStackInsets()
         }
     }
     
     /// The inset (spacing) at each side of the cards. Default is 0.
     @IBInspectable public var sideInset: CGFloat = 0 {
         didSet {
-            setCardSwiperInsets()
+            setCardStackInsets()
         }
     }
     
     /// Sets how much of the next card should be visible. Default is 0.
     @IBInspectable public var visibleNextCardHeight: CGFloat = 0 {
         didSet {
-            setCardSwiperInsets()
+            setCardStackInsets()
         }
     }
     
@@ -63,7 +63,7 @@ public class CardStack: UIView {
             flowLayout.minimumLineSpacing = newValue
         }
         didSet {
-            setCardSwiperInsets()
+            setCardStackInsets()
         }
     }
     
@@ -122,7 +122,7 @@ public class CardStack: UIView {
     private func commonInit() {
         setupCardStackView()
         setupConstraints()
-        setCardSwiperInsets()
+        setCardStackInsets()
         setupGestureRecognizer()
     }
 
@@ -139,15 +139,6 @@ extension CardStack: UIGestureRecognizerDelegate {
         tapGestureRecognizer.delegate = self
         cardStackView.addGestureRecognizer(tapGestureRecognizer)
         cardStackView.panGestureRecognizer.maximumNumberOfTouches = 1
-        
-        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeAction(swipe:)))
-        leftSwipe.direction = UISwipeGestureRecognizer.Direction.left
-        cardStackView.addGestureRecognizer(leftSwipe)
-        
-    }
-
-    @objc fileprivate func swipeAction(swipe: UISwipeGestureRecognizer) {
-        swipe.cancelsTouchesInView = false
     }
     
     @objc fileprivate func handleTap(sender: UITapGestureRecognizer) {
@@ -260,7 +251,7 @@ extension CardStack: UICollectionViewDelegateFlowLayout {
         ])
     }
 
-    fileprivate func setCardSwiperInsets() {
+    fileprivate func setCardStackInsets() {
         let bottomInset = visibleNextCardHeight + flowLayout.minimumLineSpacing
         cardStackView.contentInset = UIEdgeInsets(top: topInset, left: sideInset, bottom: bottomInset, right: sideInset)
     }

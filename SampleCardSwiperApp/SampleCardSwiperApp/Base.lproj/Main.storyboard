@@ -21,9 +21,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="kRE-c2-sWU" secondAttribute="height" multiplier="383:793" id="Brp-Il-I0e"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSideSwipingEnabled" value="YES"/>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tQb-Jw-KGX"/>

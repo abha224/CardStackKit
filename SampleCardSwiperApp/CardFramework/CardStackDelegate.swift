@@ -1,5 +1,5 @@
 //
-//  CardSwiperDelegate.swift
+//  CardStackDelegate.swift
 //
 //  Created by Abha on 17/09/23.
 //
@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-/// Used for delegating `CardSwiper` actions.
+/// Used for delegating `CardStack` actions.
 @objc public protocol CardStackDelegate: AnyObject {
 
     @objc optional func didTapCard(cardStackView: CardStackView, index: Int)

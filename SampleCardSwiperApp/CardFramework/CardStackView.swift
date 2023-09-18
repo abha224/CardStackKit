@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 public class CardStackView: UICollectionView {
     
     public func dequeueReusableCell(withReuseIdentifier identifier: String, for index: Int) -> UICollectionViewCell {
