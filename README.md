@@ -4,7 +4,13 @@ Assignment for cred application for iOS developer (2023).
 ## Project goal and information
 To develop an abstraction layer for stack framework supporting expand & collapse state
 of view, Using that abstraction layer you can create one sample stack view
-implementation.
+implementation. Key points -
+
+- Abstraction
+- Reusability of code
+- Gesture handling
+- UI animations
+- Structured code
 
 ## Requirements
 * iOS 16.0+
