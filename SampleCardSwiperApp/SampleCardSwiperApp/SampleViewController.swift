@@ -7,9 +7,9 @@
 
 import UIKit
 
-class SampleViewController: UIViewController, CardSwiperDelegate, StackCardDatasource {
+class SampleViewController: UIViewController, CardSwiperDelegate, CardSwiperDatasource {
 
-    @IBOutlet private var cardSwiper: StackCard!
+    @IBOutlet private var cardSwiper: CardSwiper!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +30,7 @@ class SampleViewController: UIViewController, CardSwiperDelegate, StackCardDatas
         }
     }
 
-    func cardForItemAt(stackCardView: StackCardView, cardForItemAt index: Int) -> CardCell {
-
+    func cardForItemAt(stackCardView: CardSwiperView, cardForItemAt index: Int) -> CardCell {
         if let cardCell = stackCardView.dequeueReusableCell(withReuseIdentifier: "SampleCell", for: index) as? SampleCardCell {
             cardCell.bottomView.isUserInteractionEnabled = true
             cardCell.bottomView.roundCorners([.topLeft, .topRight], radius: 20)
@@ -43,12 +42,11 @@ class SampleViewController: UIViewController, CardSwiperDelegate, StackCardDatas
         return CardCell()
     }
 
-    func numberOfCards(stackCardView: StackCardView) -> Int {
+    func numberOfCards(stackCardView: CardSwiperView) -> Int {
         return 3
     }
     
-    func didEndScroll(stackCardView: StackCardView) {
-        //used
+    func didEndScroll(stackCardView: CardSwiperView) {
         if let currentIndex = cardSwiper.focussedCardIndex {
             if let cell = stackCardView.cellForItem(at: IndexPath.init(item: currentIndex - 1, section: 0)) as? SampleCardCell {
                 cell.backgroundColor = cell.topView.backgroundColor
@@ -56,12 +54,9 @@ class SampleViewController: UIViewController, CardSwiperDelegate, StackCardDatas
                 cell.bottomView.roundCorners([.topLeft, .topRight], radius: 20)
             }
         }
-        
-//        print(cardSwiper.gesture)
     }
 
-    func didTapCard(stackCardView: StackCardView, index: Int) {
-        // used internal
+    func didTapCard(stackCardView: CardSwiperView, index: Int) {
         if cardSwiper.focussedCardIndex != nil {
             _ = cardSwiper.scrollToCard(at: index, animated: true)
             if let cell = stackCardView.cellForItem(at: IndexPath.init(item: index, section: 0)) as? SampleCardCell {

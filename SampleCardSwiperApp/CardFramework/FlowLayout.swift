@@ -8,7 +8,7 @@
 import UIKit
 
 /// Custom `UICollectionViewFlowLayout` that provides the flowlayout information like paging and `CardCell` movements.
-internal class StackCardFlowLayout: UICollectionViewFlowLayout {
+internal class CardFlowLayout: UICollectionViewFlowLayout {
 
     /// This property sets the amount of scaling for the first item.
     internal var firstItemTransform: CGFloat?
@@ -133,9 +133,6 @@ internal class StackCardFlowLayout: UICollectionViewFlowLayout {
      | +--B--+ |   | +--B--+ |
      | |     | |   | |     | |
      +-+-----+-+   +-+-----+-+
-     ```
-     
-     - parameter attributes: The attributes we're updating.
      */
     fileprivate func updateCellAttributes(_ attributes: UICollectionViewLayoutAttributes) {
         guard let collectionView = collectionView else { return }

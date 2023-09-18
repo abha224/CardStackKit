@@ -14,15 +14,23 @@ import UIKit
  To use this, you need to implement the `StackCardDatasource`.
  If you want to handle actions like cards being swiped away, implement the `StackCardDelegate`.
  */
-public class StackCard: UIView {
+public class CardSwiper: UIView {
 
-    /// The collectionView where all the magic happens.
-    public var stackCardView: StackCardView!
-    /// Indicates if side swiping on cards is enabled. Default is `true`.
-   public var isSideSwipingEnabled: Bool = true
-    
     public weak var delegate: CardSwiperDelegate?
-    public weak var datasource: StackCardDatasource?
+    public weak var datasource: CardSwiperDatasource?
+    
+    /// The collectionView where all the magic happens.
+    public var stackCardView: CardSwiperView!
+    /// Indicates if side swiping on cards is enabled. Default is `true`.
+    public var isSideSwipingEnabled: Bool = true
+    /// The currently focussed card index.
+    public var focussedCardIndex: Int? {
+        let center = self.convert(self.stackCardView.center, to: self.stackCardView)
+        if let indexPath = self.stackCardView.indexPathForItem(at: center) {
+            return indexPath.row
+        }
+        return nil
+    }
     
     /// We use this tapGestureRecognizer for the tap recognizer.
     fileprivate var tapGestureRecognizer: UITapGestureRecognizer!
@@ -71,7 +79,6 @@ public class StackCard: UIView {
     
     /// Allows you to enable/disable the stacking effect. Default is `true`.
     @IBInspectable public var isStackingEnabled: Bool = true {
-        // hit init 8
         willSet {
             flowLayout.isStackingEnabled = newValue
         }
@@ -86,24 +93,14 @@ public class StackCard: UIView {
     
     /// Sets how many cards of the stack are visible in the background. Default is 1.
     @IBInspectable public var stackedCardsCount: Int = 1 {
-        // hit init 9
         willSet {
             flowLayout.stackedCardsCount = newValue
         }
     }
-    
-    /// The currently focussed card index.
-    public var focussedCardIndex: Int? {
-        let center = self.convert(self.stackCardView.center, to: self.stackCardView)
-        if let indexPath = self.stackCardView.indexPathForItem(at: center) {
-            return indexPath.row
-        }
-        return nil
-    }
 
     /// The flowlayout used in the collectionView.
-    fileprivate lazy var flowLayout: StackCardFlowLayout = {
-        let flowLayout = StackCardFlowLayout()
+    fileprivate lazy var flowLayout: CardFlowLayout = {
+        let flowLayout = CardFlowLayout()
         flowLayout.firstItemTransform = firstItemTransform
         flowLayout.minimumLineSpacing = cardSpacing
         flowLayout.isPagingEnabled = true
@@ -134,7 +131,7 @@ public class StackCard: UIView {
 
 }
 
-extension StackCard: UIGestureRecognizerDelegate {
+extension CardSwiper: UIGestureRecognizerDelegate {
 
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
@@ -161,7 +158,7 @@ extension StackCard: UIGestureRecognizerDelegate {
     }
 }
 
-extension StackCard: UICollectionViewDelegate, UICollectionViewDataSource {
+extension CardSwiper: UICollectionViewDelegate, UICollectionViewDataSource {
 
     public func scrollToCard(at index: Int, animated: Bool) -> Bool {
         guard
@@ -202,8 +199,9 @@ extension StackCard: UICollectionViewDelegate, UICollectionViewDataSource {
     }
 }
 
-// Setup
-extension StackCard: UICollectionViewDelegateFlowLayout {
+// Setup for CardCell
+extension CardSwiper: UICollectionViewDelegateFlowLayout {
+    
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let itemSize = calculateItemSize(for: indexPath.row)
 
@@ -237,7 +235,7 @@ extension StackCard: UICollectionViewDelegateFlowLayout {
     }
 
     fileprivate func setupStackCardView() {
-        stackCardView = StackCardView(frame: self.frame, collectionViewLayout: flowLayout)
+        stackCardView = CardSwiperView(frame: self.frame, collectionViewLayout: flowLayout)
         stackCardView.decelerationRate = UIScrollView.DecelerationRate.fast
         stackCardView.backgroundColor = UIColor.clear
         stackCardView.showsVerticalScrollIndicator = false

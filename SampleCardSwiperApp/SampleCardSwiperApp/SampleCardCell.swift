@@ -8,9 +8,6 @@ class SampleCardCell: CardCell {
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var buttomTitleView: UIView!
     
-    /**
-     We use this function to calculate and set a  backgroundcolor for the card.
-     */
     public func setBackgroundColor() -> UIColor {
         return UIColor(white: 0.0, alpha: 1.0)
     }
