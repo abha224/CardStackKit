@@ -7,11 +7,11 @@
 import Foundation
 import UIKit
 
-/// Used for delegating `StackCard` actions.
+/// Used for delegating `CardSwiper` actions.
 @objc public protocol CardSwiperDelegate: AnyObject {
 
-    @objc optional func didTapCard(stackCardView: CardSwiperView, index: Int)
-    @objc optional func didEndScroll(stackCardView: CardSwiperView)
-    @objc optional func sizeForItem(stackCardView: CardSwiperView, index: Int) -> CGSize
+    @objc optional func didTapCard(cardSwiperView: CardSwiperView, index: Int)
+    @objc optional func didEndScroll(cardSwiperView: CardSwiperView)
+    @objc optional func sizeForItem(cardSwiperView: CardSwiperView, index: Int) -> CGSize
 }
 

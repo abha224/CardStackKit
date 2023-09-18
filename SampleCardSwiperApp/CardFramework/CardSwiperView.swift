@@ -10,7 +10,9 @@ import UIKit
 
 
 public class CardSwiperView: UICollectionView {
+    
     public func dequeueReusableCell(withReuseIdentifier identifier: String, for index: Int) -> UICollectionViewCell {
         return self.dequeueReusableCell(withReuseIdentifier: identifier, for: IndexPath(row: index, section: 0))
     }
+    
 }

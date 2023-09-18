@@ -6,9 +6,10 @@
 
 import Foundation
 
-/// Used for providing data to the `StackCard`.
+/// Used for providing data to the `CardSwiper`.
 public protocol CardSwiperDatasource: AnyObject {
-    func numberOfCards(stackCardView: CardSwiperView) -> Int
-    func cardForItemAt(stackCardView: CardSwiperView, cardForItemAt index: Int) -> CardCell
+    
+    func numberOfCards(cardSwiperView: CardSwiperView) -> Int
+    func cardForItemAt(cardSwiperView: CardSwiperView, cardForItemAt index: Int) -> CardCell
 }
 

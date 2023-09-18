@@ -3,13 +3,12 @@ import UIKit
 
 class SampleCardCell: CardCell {
     
-    
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var buttomTitleView: UIView!
     
     public func setBackgroundColor() -> UIColor {
-        return UIColor(white: 0.0, alpha: 1.0)
+        return UIColor.darkGray
     }
 
     override func prepareForReuse() {
@@ -18,10 +17,13 @@ class SampleCardCell: CardCell {
     }
 
     override func layoutSubviews() {
+        // add rounding here
         let corners = UIBezierPath.init(roundedRect: self.bounds, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: 20, height: 20))
         let shape = CAShapeLayer.init()
         shape.path = corners.cgPath
         self.layer.mask = shape
+        self.layer.borderWidth = 0.5
+        self.layer.borderColor = UIColor.systemBackground.cgColor
         super.layoutSubviews()
     }
 }
