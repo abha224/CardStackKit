@@ -1,5 +1,5 @@
-# Cred-assignment
-Assignment for cred application for iOS developer.
+# Cred-assignment-2023
+Assignment for cred application for iOS developer (2023).
 
 ## Project goal and information
 To develop an abstraction layer for stack framework supporting expand & collapse state
