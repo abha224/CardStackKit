@@ -212,54 +212,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "ED2800A1-57C4-4F2C-8367-7BC0F7710B00"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CardFramework/CardSwiper.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
-            landmarkName = "handlePan(sender:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "ED2800A1-57C4-4F2C-8367-7BC0F7710B00 - e982027b7881f966"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.handlePan(sender: __C.UIPanGestureRecognizer) -&gt; ()"
-                  moduleName = "SampleCardSwiperApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhaw/Documents/2024/Cred%20Assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "337"
-                  endingLineNumber = "337"
-                  offsetFromSymbolStart = "108">
-               </Location>
-               <Location
-                  uuid = "ED2800A1-57C4-4F2C-8367-7BC0F7710B00 - e982027b7881f966"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.handlePan(sender: __C.UIPanGestureRecognizer) -&gt; ()"
-                  moduleName = "SampleCardSwiperApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhaw/Documents/2024/Cred%20Assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "337"
-                  endingLineNumber = "337"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "527A21D7-53EE-4DA3-A9FD-0F01C65023D8"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -267,8 +219,8 @@
             filePath = "CardFramework/CardSwiper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "257"
-            endingLineNumber = "257"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "collectionView(_:numberOfItemsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -283,25 +235,9 @@
             filePath = "CardFramework/CardSwiper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "262"
-            endingLineNumber = "262"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
             landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D4A9DE45-C617-4C45-BF4A-3B92D66AAFE1"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CardFramework/CardSwiper.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "271"
-            endingLineNumber = "271"
-            landmarkName = "scrollViewDidScrollToTop(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -315,8 +251,8 @@
             filePath = "CardFramework/CardSwiper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "276"
-            endingLineNumber = "276"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
             landmarkName = "scrollViewDidEndDragging(_:willDecelerate:)"
             landmarkType = "7">
             <Locations>
@@ -363,8 +299,8 @@
             filePath = "CardFramework/CardSwiper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "284"
-            endingLineNumber = "284"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
             landmarkName = "scrollViewDidEndScrollingAnimation(_:)"
             landmarkType = "7">
             <Locations>
@@ -404,273 +340,64 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D534466E-8AF9-4F85-AC52-F2F0FFB1AE19"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CardFramework/CardSwiper.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "291"
-            endingLineNumber = "291"
-            landmarkName = "collectionView(_:layout:sizeForItemAt:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D534466E-8AF9-4F85-AC52-F2F0FFB1AE19 - 1b23566ffca5bf84"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.scrollViewDidEndScrollingAnimation(__C.UIScrollView) -&gt; ()"
-                  moduleName = "SampleCardSwiperApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "291"
-                  endingLineNumber = "291"
-                  offsetFromSymbolStart = "644">
-               </Location>
-               <Location
-                  uuid = "D534466E-8AF9-4F85-AC52-F2F0FFB1AE19 - ed9ff6a83b2ca616"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.collectionView(_: __C.UICollectionView, layout: __C.UICollectionViewLayout, sizeForItemAt: Foundation.IndexPath) -&gt; __C.CGSize"
-                  moduleName = "SampleCardSwiperApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "293"
-                  endingLineNumber = "293"
-                  offsetFromSymbolStart = "160">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "560EC474-CC62-438D-98FC-B8D4B8F54DCE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CardFramework/CardSwiper.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "308"
-            endingLineNumber = "308"
-            landmarkName = "calculateItemSize(for:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "560EC474-CC62-438D-98FC-B8D4B8F54DCE - ed9ff6a83b2ca005"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.collectionView(_: __C.UICollectionView, layout: __C.UICollectionViewLayout, sizeForItemAt: Foundation.IndexPath) -&gt; __C.CGSize"
-                  moduleName = "SampleCardSwiperApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "308"
-                  endingLineNumber = "308"
-                  offsetFromSymbolStart = "680">
-               </Location>
-               <Location
-                  uuid = "560EC474-CC62-438D-98FC-B8D4B8F54DCE - 2357146914c724f6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.calculateItemSize(for: Swift.Int) -&gt; __C.CGSize"
-                  moduleName = "SampleCardSwiperApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "310"
-                  endingLineNumber = "310"
-                  offsetFromSymbolStart = "108">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C768A653-C9E9-49CC-908C-0EF26F3CDEC1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CardFramework/CardSwiper.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "327"
-            endingLineNumber = "327"
-            landmarkName = "setupStackCardView()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C768A653-C9E9-49CC-908C-0EF26F3CDEC1 - 2357146914c726c1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.calculateItemSize(for: Swift.Int) -&gt; __C.CGSize"
-                  moduleName = "SampleCardSwiperApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "327"
-                  endingLineNumber = "327"
-                  offsetFromSymbolStart = "1628">
-               </Location>
-               <Location
-                  uuid = "C768A653-C9E9-49CC-908C-0EF26F3CDEC1 - e974bae65f7ede7a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.setupStackCardView() -&gt; ()"
-                  moduleName = "SampleCardSwiperApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "327"
-                  endingLineNumber = "327"
-                  offsetFromSymbolStart = "84">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "13253054-4E0A-4737-867A-FBDC48185C8B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CardFramework/CardSwiper.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "339"
-            endingLineNumber = "339"
-            landmarkName = "setupConstraints()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "13253054-4E0A-4737-867A-FBDC48185C8B - 1cc9f09af74ec5e6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.setupConstraints() -&gt; ()"
-                  moduleName = "SampleCardSwiperApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "342"
-                  endingLineNumber = "342"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  uuid = "13253054-4E0A-4737-867A-FBDC48185C8B - 1cc9f09af74ec585"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.setupConstraints() -&gt; ()"
-                  moduleName = "SampleCardSwiperApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "339"
-                  endingLineNumber = "339"
-                  offsetFromSymbolStart = "320">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A3A13E9D-65E4-4DA9-A953-523102E6791F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CardFramework/CardSwiper.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "347"
-            endingLineNumber = "347"
-            landmarkName = "setCardSwiperInsets()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A3A13E9D-65E4-4DA9-A953-523102E6791F - 1cc9f09af74ec68d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.setupConstraints() -&gt; ()"
-                  moduleName = "SampleCardSwiperApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "347"
-                  endingLineNumber = "347"
-                  offsetFromSymbolStart = "1244">
-               </Location>
-               <Location
-                  uuid = "A3A13E9D-65E4-4DA9-A953-523102E6791F - b2d001d99a590a7d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.setCardSwiperInsets() -&gt; ()"
-                  moduleName = "SampleCardSwiperApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "347"
-                  endingLineNumber = "347"
-                  offsetFromSymbolStart = "84">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "9AE7353D-6188-4CA6-B7A9-27822CFEF8F2"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardFramework/CardSwiper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "scrollToCard(at:animated:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6FCEB171-B5F0-4C2F-B5A7-3E2673E9DA29"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CardFramework/CardSwiper.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
-            landmarkName = "reloadData()"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9AE7353D-6188-4CA6-B7A9-27822CFEF8F2 - 74eb4b839154d96c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.handleTap(sender: __C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "163"
+                  endingLineNumber = "163"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "9AE7353D-6188-4CA6-B7A9-27822CFEF8F2 - 1a0ec28a5f8b6693"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.scrollToCard(at: Swift.Int, animated: Swift.Bool) -&gt; Swift.Bool"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "1152">
+               </Location>
+               <Location
+                  uuid = "9AE7353D-6188-4CA6-B7A9-27822CFEF8F2 - 1a0ec28a5f8b67aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.scrollToCard(at: Swift.Int, animated: Swift.Bool) -&gt; Swift.Bool"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "167"
+                  endingLineNumber = "167"
+                  offsetFromSymbolStart = "724">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -683,8 +410,8 @@
             filePath = "CardFramework/CardSwiper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
             landmarkName = "handleTap(sender:)"
             landmarkType = "7">
             <Locations>
@@ -740,49 +467,34 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0F019618-8224-4F2A-B7CB-B23F6F5AD5CE"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardFramework/CardSwiper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "setupGestureRecognizer()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "0F019618-8224-4F2A-B7CB-B23F6F5AD5CE - 79076e90d7fe4faf"
+                  uuid = "0F019618-8224-4F2A-B7CB-B23F6F5AD5CE - e309eab95c707b21"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.__allocating_init(frame: __C.CGRect) -&gt; SampleCardSwiperApp.StackCard"
+                  symbolName = "SampleCardSwiperApp.StackCard.commonInit() -&gt; ()"
                   moduleName = "SampleCardSwiperApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
                   offsetFromSymbolStart = "32">
                </Location>
                <Location
-                  uuid = "0F019618-8224-4F2A-B7CB-B23F6F5AD5CE - 5717cb5cbc562c7d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.init(frame: __C.CGRect) -&gt; SampleCardSwiperApp.StackCard"
-                  moduleName = "SampleCardSwiperApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "224">
-               </Location>
-               <Location
-                  uuid = "0F019618-8224-4F2A-B7CB-B23F6F5AD5CE - c9dc05e132c4a6d1"
+                  uuid = "0F019618-8224-4F2A-B7CB-B23F6F5AD5CE - c9dc05e132c4ab08"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -792,9 +504,39 @@
                   urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "162"
-                  endingLineNumber = "162"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
                   offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "0F019618-8224-4F2A-B7CB-B23F6F5AD5CE - 74eb4b839154dbe1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.handleTap(sender: __C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "0F019618-8224-4F2A-B7CB-B23F6F5AD5CE - 74eb4b839154dbe1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.handleTap(sender: __C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "312">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -809,8 +551,8 @@
             filePath = "CardFramework/CardSwiper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "commonInit()"
             landmarkType = "7">
             <Locations>
@@ -932,8 +674,8 @@
             filePath = "CardFramework/CardSwiper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "init(frame:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -942,14 +684,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "73CC4E39-0704-4A53-9181-A326E3DCF183"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardFramework/CardSwiper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "init(frame:)"
             landmarkType = "7">
             <Locations>
@@ -996,8 +738,8 @@
             filePath = "CardFramework/CardSwiper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "flowLayout"
             landmarkType = "24">
          </BreakpointContent>
@@ -1006,14 +748,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2B93C569-EFD5-435D-B22A-F3CC6B5E9B5D"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardFramework/CardSwiper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "topInset"
             landmarkType = "24">
          </BreakpointContent>
@@ -1022,7 +764,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "F1EA6E1D-73EB-41C4-8C89-6673C8B5B2BE"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardFramework/CardSwiper.swift"
@@ -1038,39 +780,176 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E8B8E747-4149-4110-A8B3-F4AD5ABF2D13"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardFramework/CardSwiper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "visibleNextCardHeight"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "E8B8E747-4149-4110-A8B3-F4AD5ABF2D13 - 88ce6d7cd804076c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.topInset.getter : CoreGraphics.CGFloat"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "E8B8E747-4149-4110-A8B3-F4AD5ABF2D13 - 2d872c1b1ad5b450"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.topInset.setter : CoreGraphics.CGFloat"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "E8B8E747-4149-4110-A8B3-F4AD5ABF2D13 - 3eb34d1429ef8b51"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.topInset.modify : CoreGraphics.CGFloat"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "E8B8E747-4149-4110-A8B3-F4AD5ABF2D13 - 11743444f1621646"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.topInset.modify : CoreGraphics.CGFloat with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "E8B8E747-4149-4110-A8B3-F4AD5ABF2D13 - 5717cb5cbc562b9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.init(frame: __C.CGRect) -&gt; SampleCardSwiperApp.StackCard"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "448">
+               </Location>
+               <Location
+                  uuid = "E8B8E747-4149-4110-A8B3-F4AD5ABF2D13 - 94664a960be18276"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SampleCardSwiperApp.StackCard&gt;"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "416">
+               </Location>
+               <Location
+                  uuid = "E8B8E747-4149-4110-A8B3-F4AD5ABF2D13 - 51c33bf6368c7315"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.visibleNextCardHeight.didset : CoreGraphics.CGFloat"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "E8B8E747-4149-4110-A8B3-F4AD5ABF2D13 - 51c33bf6368c7334"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.visibleNextCardHeight.didset : CoreGraphics.CGFloat"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "9A35294B-6EBE-41AC-B632-3437527A403F"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardFramework/CardSwiper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "cardSpacing"
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "9A35294B-6EBE-41AC-B632-3437527A403F - ed363170ce999184"
+                  uuid = "9A35294B-6EBE-41AC-B632-3437527A403F - 49147634f7165845"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.isSideSwipingEnabled.willset : Swift.Bool"
+                  symbolName = "SampleCardSwiperApp.StackCard.sideInset.getter : CoreGraphics.CGFloat"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "9A35294B-6EBE-41AC-B632-3437527A403F - 2eec530d1e3309d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.sideInset.setter : CoreGraphics.CGFloat"
                   moduleName = "SampleCardSwiperApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
@@ -1081,7 +960,67 @@
                   offsetFromSymbolStart = "96">
                </Location>
                <Location
-                  uuid = "9A35294B-6EBE-41AC-B632-3437527A403F - f2a7a32bf9adaf71"
+                  uuid = "9A35294B-6EBE-41AC-B632-3437527A403F - da355f44db021fa6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.sideInset.modify : CoreGraphics.CGFloat"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "9A35294B-6EBE-41AC-B632-3437527A403F - fe419e0176527cb7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.sideInset.modify : CoreGraphics.CGFloat with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "9A35294B-6EBE-41AC-B632-3437527A403F - 5717cb5cbc562b64"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.init(frame: __C.CGRect) -&gt; SampleCardSwiperApp.StackCard"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "476">
+               </Location>
+               <Location
+                  uuid = "9A35294B-6EBE-41AC-B632-3437527A403F - 94664a960be1828c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SampleCardSwiperApp.StackCard&gt;"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "444">
+               </Location>
+               <Location
+                  uuid = "9A35294B-6EBE-41AC-B632-3437527A403F - f2a7a32bf9adae90"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1091,45 +1030,12 @@
                   urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
                   offsetFromSymbolStart = "36">
                </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C2D58564-185A-4FDE-B5B4-3EE227C0E0BC"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CardFramework/CardSwiper.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "cardSpacing"
-            landmarkType = "24">
-            <Locations>
                <Location
-                  uuid = "C2D58564-185A-4FDE-B5B4-3EE227C0E0BC - ed363170ce999027"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.isSideSwipingEnabled.willset : Swift.Bool"
-                  moduleName = "SampleCardSwiperApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "488">
-               </Location>
-               <Location
-                  uuid = "C2D58564-185A-4FDE-B5B4-3EE227C0E0BC - 64153913404e7994"
+                  uuid = "9A35294B-6EBE-41AC-B632-3437527A403F - 64153913404e79bb"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1139,8 +1045,56 @@
                   urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2D58564-185A-4FDE-B5B4-3EE227C0E0BC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CardFramework/CardSwiper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "cardSpacing"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "C2D58564-185A-4FDE-B5B4-3EE227C0E0BC - ffe4af94e2a2e90"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.sideInset.didset : CoreGraphics.CGFloat"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "C2D58564-185A-4FDE-B5B4-3EE227C0E0BC - 64153913404e79bb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.cardSpacing.didset : CoreGraphics.CGFloat"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
                   offsetFromSymbolStart = "24">
                </Location>
             </Locations>
@@ -1150,67 +1104,19 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "644B0016-471E-4898-A7B3-0B2493978223"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardFramework/CardSwiper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "firstItemTransform"
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "644B0016-471E-4898-A7B3-0B2493978223 - 4c8d0fb7aff0aa8d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.topInset.didset : CoreGraphics.CGFloat"
-                  moduleName = "SampleCardSwiperApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "24">
-               </Location>
-               <Location
-                  uuid = "644B0016-471E-4898-A7B3-0B2493978223 - ec53eac7ceea93bd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SampleCardSwiperApp.StackCard.firstItemTransform.willset : CoreGraphics.CGFloat"
-                  moduleName = "SampleCardSwiperApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "40">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C20BF4B1-1085-489B-9B9F-8853E0B2D6DB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CardFramework/CardSwiper.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "isStackOnBottom"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "C20BF4B1-1085-489B-9B9F-8853E0B2D6DB - 51c33bf6368c70b1"
+                  uuid = "644B0016-471E-4898-A7B3-0B2493978223 - 51c33bf6368c7106"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1220,12 +1126,120 @@
                   urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
                   offsetFromSymbolStart = "28">
                </Location>
                <Location
-                  uuid = "C20BF4B1-1085-489B-9B9F-8853E0B2D6DB - 17ddc1c554e31fbd"
+                  uuid = "644B0016-471E-4898-A7B3-0B2493978223 - ec53eac7ceea939e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.firstItemTransform.willset : CoreGraphics.CGFloat"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "644B0016-471E-4898-A7B3-0B2493978223 - 5a367be959dbbf08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.isStackingEnabled.getter : Swift.Bool"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "644B0016-471E-4898-A7B3-0B2493978223 - 189c68e2d9342764"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.isStackingEnabled.setter : Swift.Bool"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "644B0016-471E-4898-A7B3-0B2493978223 - f201eb35fe7910e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.isStackingEnabled.modify : Swift.Bool"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "644B0016-471E-4898-A7B3-0B2493978223 - 187dcc24b39cb206"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.isStackingEnabled.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C20BF4B1-1085-489B-9B9F-8853E0B2D6DB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CardFramework/CardSwiper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "isStackOnBottom"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "C20BF4B1-1085-489B-9B9F-8853E0B2D6DB - ec53eac7ceea9248"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.firstItemTransform.willset : CoreGraphics.CGFloat"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "C20BF4B1-1085-489B-9B9F-8853E0B2D6DB - 17ddc1c554e31fdc"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1235,9 +1249,24 @@
                   urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
                   offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "C20BF4B1-1085-489B-9B9F-8853E0B2D6DB - b7b0db89e81e0ffe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCard.stackedCardsCount.willset : Swift.Int"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/CardSwiper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "40">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1252,42 +1281,10 @@
             filePath = "CardFramework/CardSwiper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "focussedCardIndex"
             landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "630391C3-C5F2-4F93-8FA8-0E3BF872EF36"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CardFramework/CardSwiper.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "isSideSwipingEnabled"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "09ED5627-90BE-4005-911C-D34C9D60D242"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CardFramework/CardSwiper.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "299"
-            endingLineNumber = "299"
-            landmarkName = "collectionView(_:layout:sizeForItemAt:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1300,8 +1297,8 @@
             filePath = "CardFramework/FlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "layoutAttributesForElements(in:)"
             landmarkType = "7">
             <Locations>
@@ -1372,14 +1369,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "BB80DDAF-DB68-427B-A912-5E55DEFBDD87"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardFramework/FlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "layoutAttributesForItem(at:)"
             landmarkType = "7">
             <Locations>
@@ -1413,6 +1410,21 @@
                   endingLineNumber = "52"
                   offsetFromSymbolStart = "116">
                </Location>
+               <Location
+                  uuid = "BB80DDAF-DB68-427B-A912-5E55DEFBDD87 - 3d1c16f07a74b0fb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCardFlowLayout.layoutAttributesForItem(at: Foundation.IndexPath) -&gt; Swift.Optional&lt;__C.UICollectionViewLayoutAttributes&gt;"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/FlowLayout.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "116">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1420,14 +1432,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B8E4120F-392B-4633-82D7-3C94B7E78030"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardFramework/FlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "finalLayoutAttributesForDisappearingItem(at:)"
             landmarkType = "7">
             <Locations>
@@ -1461,6 +1473,21 @@
                   endingLineNumber = "63"
                   offsetFromSymbolStart = "108">
                </Location>
+               <Location
+                  uuid = "B8E4120F-392B-4633-82D7-3C94B7E78030 - cc8eedb198d0fe9b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCardFlowLayout.finalLayoutAttributesForDisappearingItem(at: Foundation.IndexPath) -&gt; Swift.Optional&lt;__C.UICollectionViewLayoutAttributes&gt;"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/FlowLayout.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "108">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1468,16 +1495,48 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "380819EA-8338-4990-8239-04253FF431FA"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardFramework/FlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "initialLayoutAttributesForAppearingItem(at:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "380819EA-8338-4990-8239-04253FF431FA - b8607627445e4b3b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCardFlowLayout.initialLayoutAttributesForAppearingItem(at: Foundation.IndexPath) -&gt; Swift.Optional&lt;__C.UICollectionViewLayoutAttributes&gt;"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/FlowLayout.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "380819EA-8338-4990-8239-04253FF431FA - b8607627445e4b58"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleCardSwiperApp.StackCardFlowLayout.initialLayoutAttributesForAppearingItem(at: Foundation.IndexPath) -&gt; Swift.Optional&lt;__C.UICollectionViewLayoutAttributes&gt;"
+                  moduleName = "SampleCardSwiperApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhaw/Documents/2024/Cred-assignment/SampleCardSwiperApp/CardFramework/FlowLayout.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1490,8 +1549,8 @@
             filePath = "CardFramework/FlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "shouldInvalidateLayout(forBoundsChange:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1500,14 +1559,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "ABE0C578-1A2B-4EC9-9501-F1FF9B20052F"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardFramework/FlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "targetContentOffset(forProposedContentOffset:withScrollingVelocity:)"
             landmarkType = "7">
             <Locations>
@@ -1569,8 +1628,8 @@
             filePath = "CardFramework/FlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "updateCellAttributes(_:)"
             landmarkType = "7">
             <Locations>
@@ -1617,8 +1676,8 @@
             filePath = "CardFramework/FlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "transformAttributes(attributes:deltaY:)"
             landmarkType = "7">
             <Locations>
@@ -1659,7 +1718,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "CBCBC6B0-36FD-466A-89F2-2EA5E89FC43B"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardFramework/CardCell.swift"
@@ -1675,7 +1734,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E5952B92-AB28-474E-9360-4E5A1960AB94"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardFramework/CardCell.swift"
@@ -1701,6 +1760,22 @@
             endingLineNumber = "30"
             landmarkName = "direction"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EFA36B3B-A2D0-4D61-A671-4868CCD52E92"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CardFramework/Extensions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "convertIndexToIndexPath(for:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
