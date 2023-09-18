@@ -113,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				5D33CA342AB7835D00434AC8 /* Needed */,
-				5D33CA272AB75D1B00434AC8 /* CardCell.swift */,
 				5D33CA282AB75D1B00434AC8 /* CardSwiper.swift */,
 				5D33CA262AB75D1B00434AC8 /* Extensions.swift */,
 				5D33CA232AB75D1A00434AC8 /* FlowLayout.swift */,
@@ -127,6 +126,7 @@
 				5D33CA222AB75D1A00434AC8 /* CardSwiperDelegate.swift */,
 				5D33CA252AB75D1B00434AC8 /* CardSwiperDatasource.swift */,
 				5D33CA242AB75D1A00434AC8 /* CardSwiperView.swift */,
+				5D33CA272AB75D1B00434AC8 /* CardCell.swift */,
 			);
 			path = Needed;
 			sourceTree = "<group>";

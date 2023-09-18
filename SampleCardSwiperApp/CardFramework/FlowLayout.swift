@@ -24,6 +24,7 @@ internal class StackCardFlowLayout: UICollectionViewFlowLayout {
     internal var stackedCardsCount: Int = 6
 
     internal override func prepare() {
+        // hit init
         super.prepare()
 
         assert(collectionView?.numberOfSections == 1, "Number of sections should always be 1.")
@@ -31,6 +32,7 @@ internal class StackCardFlowLayout: UICollectionViewFlowLayout {
     }
 
     internal override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        //hit
         guard let collectionView = collectionView, let cellHeight = cellHeight else { return nil }
 
         let y = collectionView.bounds.minY - cellHeight * CGFloat(stackedCardsCount)
@@ -140,7 +142,7 @@ internal class StackCardFlowLayout: UICollectionViewFlowLayout {
      - parameter attributes: The attributes we're updating.
      */
     fileprivate func updateCellAttributes(_ attributes: UICollectionViewLayoutAttributes) {
-
+//hit
         guard let collectionView = collectionView else { return }
 
         let cvMinY = collectionView.bounds.minY + collectionView.contentInset.top
@@ -164,6 +166,7 @@ internal class StackCardFlowLayout: UICollectionViewFlowLayout {
 
     // Creates and applies a CGAffineTransform to the attributes to recreate the effect of the card going to the background.
     fileprivate func transformAttributes(attributes: UICollectionViewLayoutAttributes, deltaY: CGFloat) {
+        //hit
         if firstItemTransform != nil {
             let top = isStackOnBottom ? deltaY : deltaY * -1
             let translationScale = CGFloat((attributes.zIndex + 10) * 6)

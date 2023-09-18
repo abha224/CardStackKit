@@ -8,13 +8,6 @@
 import Foundation
 import UIKit
 
-/// Indicates the direction of a cardcell swipe.
-@objc public enum SwipeDirection: Int {
-    case Left
-    case Right
-    case None
-}
-
 public enum PanDirection: Int {
     case Up
     case Down

@@ -8,32 +8,6 @@
 import Foundation
 import UIKit
 
-//internal protocol CardDelegate: AnyObject {
-
-    /**
-     Called right before a CardCell is swiped away.
-     - parameter cell: The CardCell that is being swiped away.
-     - parameter swipeDirection: The direction the card is swiped in. This can be Left, Right or None.
-     */
-//    func willSwipeAway(cell: CardCell, swipeDirection: SwipeDirection)
-//
-//    /**
-//     Called when a CardCell is swiped away.
-//     - parameter cell: The CardCell that is being swiped away.
-//     - parameter swipeDirection: The direction the card is swiped in. This can be Left, Right or None.
-//     */
-//    func didSwipeAway(cell: CardCell, swipeDirection: SwipeDirection)
-//
-//    /**
-//     Called while the user is dragging a card to a side.
-//
-//     You can use this to add some custom features to a card when it enters a certain `swipeDirection` (like overlays).
-//     - parameter card: The CardCell that the user is currently dragging.
-//     - parameter swipeDirection: The direction in which the card is being dragged.
-//     */
-//    func didDragCard(cell: CardCell, swipeDirection: SwipeDirection)
-//}
-
 
 /**
  The StackCard is a subclass of `UIView` that has a `StackCardView` embedded.
@@ -111,18 +85,7 @@ public class StackCard: UIView {
             flowLayout.stackedCardsCount = newValue
         }
     }
-    /**
-     Returns an array of indexes (as Int) that are currently visible in the `StackCardView`.
-     This includes cards that are stacked (behind the focussed card).
-     */
-//    public var indexesForVisibleCards: [Int] {
-//        var indexes: [Int] = []
-//        // Add each visible cell except the lowest one and return
-//        for cellIndexPath in self.stackCardView.indexPathsForVisibleItems {
-//            indexes.append(cellIndexPath.row)
-//        }
-//        return indexes.sorted()
-//    }
+    
     /// The currently focussed card index.
     public var focussedCardIndex: Int? {
         //hit
@@ -176,57 +139,6 @@ public class StackCard: UIView {
         self.stackCardView.delegate = self
     }
 
-    /**
-     Inserts new cards at the specified indexes.
-
-     Call this method to insert one or more new cards into the cardSwiper.
-     You might do this when your data source object receives data for new items or in response to user interactions with the cardSwiper.
-     - parameter indexes: An array of integers at which to insert the new card. This parameter must not be nil.
-     */
-//    public func insertCards(at indexes: [Int]) {
-//        performUpdates {
-//            self.stackCardView.insertItems(at: indexes.map { (index) -> IndexPath in
-//                return convertIndexToIndexPath(for: index)
-//            })
-//        }
-//    }
-
-    /**
-     Deletes cards at the specified indexes.
-
-     Call this method to delete one or more new cards from the cardSwiper.
-     You might do this when you remove the items from your data source object or in response to user interactions with the cardSwiper.
-     - parameter indexes: An array of integers at which to delete the card. This parameter must not be nil.
-     */
-//    public func deleteCards(at indexes: [Int]) {
-//        performUpdates {
-//            self.stackCardView.deleteItems(at: indexes.map { (index) -> IndexPath in
-//                return self.convertIndexToIndexPath(for: index)
-//            })
-//        }
-//    }
-
-    /**
-     Moves an item from one location to another in the collection view.
-
-     Use this method to reorganize existing cards. You might do this when you rearrange the items within your data source object or in response to user interactions with the cardSwiper. The cardSwiper updates the layout as needed to account for the move, animating cards into position as needed.
-
-     - parameter atIndex: The index of the card you want to move. This parameter must not be nil.
-     - parameter toIndex: The index of the card’s new location. This parameter must not be nil.
-     */
-//    public func moveCard(at atIndex: Int, to toIndex: Int) {
-//        self.stackCardView.moveItem(at: convertIndexToIndexPath(for: atIndex), to: convertIndexToIndexPath(for: toIndex))
-//    }
-
-    /**
-     Returns the visible card object at the specified index.
-     - parameter index: The index that specifies the item number of the cell.
-     - returns: The card object at the corresponding index or nil if the cell is not visible or index is out of range.
-     */
-//    public func cardForItem(at index: Int) -> CardCell? {
-//        return self.stackCardView.cellForItem(at: convertIndexToIndexPath(for: index)) as? CardCell
-//    }
-
     private func commonInit() {
         // hit init 5
         setupStackCardView()
@@ -235,58 +147,12 @@ public class StackCard: UIView {
         setupGestureRecognizer()
     }
 
-//    private func performUpdates(updateClosure: () -> Void) {
-//        UIView.performWithoutAnimation {
-//            self.stackCardView.performBatchUpdates({
-//                updateClosure()
-//            }, completion: { [weak self] _ in
-//                self?.stackCardView.collectionViewLayout.invalidateLayout()
-//            })
-//        }
-//    }
 }
-
-//extension StackCard: CardDelegate {
-
-//    internal func willSwipeAway(cell: CardCell, swipeDirection: SwipeDirection) {
-//        self.stackCardView.isUserInteractionEnabled = false
-//
-//        if let index = self.stackCardView.indexPath(for: cell)?.row {
-//            self.delegate?.willSwipeCardAway?(card: cell, index: index, swipeDirection: swipeDirection)
-//        }
-//    }
-//
-//    internal func didSwipeAway(cell: CardCell, swipeDirection direction: SwipeDirection) {
-//        if let indexPathToRemove = self.stackCardView.indexPath(for: cell) {
-//            swipedCard = nil
-//            self.stackCardView.performBatchUpdates({
-//                self.stackCardView.deleteItems(at: [indexPathToRemove])
-//            }, completion: { [weak self] _ in
-//                self?.stackCardView.collectionViewLayout.invalidateLayout()
-//                self?.stackCardView.isUserInteractionEnabled = true
-//                self?.delegate?.didSwipeCardAway?(card: cell, index: indexPathToRemove.row, swipeDirection: direction)
-//                self?.isCardRemovalAllowed = false
-//            })
-//        }
-//    }
-//
-//    internal func didDragCard(cell: CardCell, swipeDirection: SwipeDirection) {
-//        if let index = self.stackCardView.indexPath(for: cell)?.row {
-//            self.delegate?.didDragCard?(card: cell, index: index, swipeDirection: swipeDirection)
-//        }
-//    }
-//}
 
 extension StackCard: UIGestureRecognizerDelegate {
 
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         // hit button tap 1
-//        if let panGestureRec = horizontalPangestureRecognizer {
-//            // When a horizontal pan is detected, we make sure to disable the collectionView.panGestureRecognizer so that it doesn't interfere with the sideswipe.
-//            if let direction = panGestureRec.direction, direction.isX {
-//                return false
-//            }
-//        }
         return true
     }
 
@@ -296,17 +162,6 @@ extension StackCard: UIGestureRecognizerDelegate {
         tapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(handleTap))
         tapGestureRecognizer.delegate = self
         stackCardView.addGestureRecognizer(tapGestureRecognizer)
-
-//        longPressGestureRecognizer = UILongPressGestureRecognizer.init(target: self, action: #selector(handleHold))
-//        longPressGestureRecognizer.delegate = self
-//        longPressGestureRecognizer.minimumPressDuration = 0.125
-//        longPressGestureRecognizer.cancelsTouchesInView = false
-//        stackCardView.addGestureRecognizer(longPressGestureRecognizer)
-
-//        horizontalPangestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
-//        horizontalPangestureRecognizer.maximumNumberOfTouches = 1
-//        horizontalPangestureRecognizer.delegate = self
-//        stackCardView.addGestureRecognizer(horizontalPangestureRecognizer)
         stackCardView.panGestureRecognizer.maximumNumberOfTouches = 1
     }
 
@@ -324,19 +179,6 @@ extension StackCard: UIGestureRecognizerDelegate {
         }
     }
 
-//    @objc fileprivate func handleHold(sender: UILongPressGestureRecognizer) {
-//        if let delegate = delegate {
-//            if let wasHeld = delegate.didHoldCard {
-//                /// The taplocation relative to the collectionView.
-//                let locationInCollectionView = sender.location(in: stackCardView)
-//
-//                if let swipedCardIndex = stackCardView.indexPathForItem(at: locationInCollectionView) {
-//                    wasHeld(stackCardView, swipedCardIndex.row, sender.state)
-//                }
-//            }
-//        }
-//    }
-
     /**
      This function is called when a pan is detected inside the `collectionView`.
      We also take care of detecting if the pan gesture is inside the `swipeAbleArea` and we animate the cell if necessary.
@@ -348,40 +190,7 @@ extension StackCard: UIGestureRecognizerDelegate {
 
         /// The translation of the finger performing the PanGesture.
         let translation = sender.translation(in: self)
-
-//        setSwipedCardIfDragging(pangestureRecognizer: sender)
-
-//        if swipedCard != nil {
-//            isCardRemovalAllowed = false
-//            /// The angle we pass for the swipe animation.
-//            let maximumRotation: CGFloat = 1.0
-//            let rotationStrength = min(translation.x / self.swipedCard.frame.width, maximumRotation)
-//            let angle = (CGFloat(Double.pi) / 10.0) * rotationStrength
-//
-//            switch sender.state {
-//            case .began, .changed:
-//                swipedCard.animateCard(angle: angle, horizontalTranslation: translation.x)
-//            case .ended:
-//                swipedCard.endedPanAnimation(angle: angle)
-//            default:
-//                self.swipedCard.resetToCenterPosition()
-//            }
-//        }
     }
-
-//    fileprivate func setSwipedCardIfDragging(pangestureRecognizer gestureRec: UIPanGestureRecognizer) {
-//        /// The taplocation relative to the superview.
-//        let location = gestureRec.location(in: self)
-//        /// The taplocation relative to the collectionView.
-//        let locationInCollectionView = gestureRec.location(in: stackCardView)
-//
-//        if let swipeArea = swipeAbleArea, swipeArea.contains(location), !stackCardView.isScrolling {
-//            if let swipedCardIndex = stackCardView.indexPathForItem(at: locationInCollectionView) {
-//                /// The card that is swipeable inside the SwipeAbleArea.
-//                self.swipedCard = self.stackCardView.cellForItem(at: swipedCardIndex) as? CardCell
-//            }
-//        }
-//    }
 }
 
 extension StackCard: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -394,26 +203,6 @@ extension StackCard: UICollectionViewDelegate, UICollectionViewDataSource {
     public func reloadData() {
         stackCardView.reloadData()
     }
-
-    /**
-     Allows you to swipe a card away from code.
-     The  `willSwipeCardAway` and `didSwipeCardAway` delegate functions will also be called when you use this function.
-     You can use `willSwipeCardAway` to modify your DataSource.
-     - parameter index: The index of the card you want to swipe away.
-     - parameter direction: The `SwipeDirection` you want to swipe to.
-     - parameter duration: The duration of the animation in seconds. Default is 0.3 seconds.
-     - Returns: True if swiping away succeeds. False if swiping away failed.
-     */
-//    public func swipeCardAwayProgrammatically(at index: Int, to direction: SwipeDirection, withDuration duration: TimeInterval = 0.3) -> Bool {
-//        guard swipedCard == nil, isCardRemovalAllowed else { return false }
-//
-//        if let card = self.stackCardView.cellForItem(at: self.convertIndexToIndexPath(for: index)) as? CardCell {
-//            isCardRemovalAllowed = false
-//            card.animateOffScreenProgramatically(to: direction, withDuration: duration)
-//            return true
-//        }
-//        return false
-//    }
 
     /**
      Scrolls the collection view contents until the specified item is visible.
@@ -445,24 +234,6 @@ extension StackCard: UICollectionViewDelegate, UICollectionViewDataSource {
     }
 
     /**
-     Register a class for use in creating new CardCells.
-     Prior to calling the dequeueReusableCell(withReuseIdentifier:for:) method of the collection view,
-     you must use this method or the register(_:forCellWithReuseIdentifier:) method
-     to tell the collection view how to create a new cell of the given type.
-     If a cell of the specified type is not currently in a reuse queue,
-     the StackCard uses the provided information to create a new cell object automatically.
-     If you previously registered a class or nib file with the same reuse identifier,
-     the class you specify in the cellClass parameter replaces the old entry.
-     You may specify nil for cellClass if you want to unregister the class from the specified reuse identifier.
-     - parameter cellClass: The class of a cell that you want to use in the StackCard
-     identifier
-     - parameter identifier: The reuse identifier to associate with the specified class. This parameter must not be nil and must not be an empty string.
-     */
-//    public func register(_ cellClass: AnyClass?, forCellWithReuseIdentifier identifier: String) {
-//        self.stackCardView.register(cellClass, forCellWithReuseIdentifier: identifier)
-//    }
-
-    /**
      Register a nib file for use in creating new collection view cells.
      Prior to calling the dequeueReusableCell(withReuseIdentifier:for:) method of the collection view,
      you must use this method or the register(_:forCellWithReuseIdentifier:) method
@@ -489,16 +260,11 @@ extension StackCard: UICollectionViewDelegate, UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // hit button 4
         if let card = datasource?.cardForItemAt(stackCardView: stackCardView, cardForItemAt: indexPath.row) {
-            card.delegate = self
+//            card.delegate = self
             return card
         }
         return CardCell()
     }
-//
-//    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        self.delegate?.didScroll?(stackCardView: self.stackCardView)
-//        isCardRemovalAllowed = false
-//    }
 
     public func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
         // hit swipe 2
@@ -512,12 +278,6 @@ extension StackCard: UICollectionViewDelegate, UICollectionViewDataSource {
             isCardRemovalAllowed = false
         }
     }
-
-//    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-//        // dismiss
-//        delegate?.didEndScroll?(stackCardView: stackCardView)
-//        isCardRemovalAllowed = false
-//    }
 
     public func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         // hit init 10
