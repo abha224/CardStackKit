@@ -1,6 +1,15 @@
 # Cred-assignment-2023
 Assignment for cred application for iOS developer (2023).
 
+## Project goal and information
+To develop an abstraction layer for stack framework supporting expand & collapse state
+of view, Using that abstraction layer you can create one sample stack view
+implementation.
+
+## Requirements
+* iOS 16.0+
+* Swift 5
+
 ## Usage
 `CardStack` behaves like a standard `UICollectionView`. To use it inside your UIViewController:
 
