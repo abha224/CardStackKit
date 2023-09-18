@@ -1,6 +1,5 @@
 //
-//  CardSwiper.swift
-//  cardStack
+//  CardStack.swift
 //
 //  Created by Abha on 17/09/23.
 //
@@ -10,23 +9,21 @@ import UIKit
 
 
 /**
- The StackCard is a subclass of `UIView` that has a `CardSwiperView` embedded.
+ The StackCard is a subclass of `UIView` that has a `CardStackView` embedded.
  To use this, you need to implement the `StackCardDatasource`.
  If you want to handle actions like cards being swiped away, implement the `StackCardDelegate`.
  */
-public class CardSwiper: UIView {
+public class CardStack: UIView {
 
-    public weak var delegate: CardSwiperDelegate?
-    public weak var datasource: CardSwiperDatasource?
+    public weak var delegate: CardStackDelegate?
+    public weak var datasource: CardStackDatasource?
     
     /// The collectionView where all the magic happens.
-    public var cardSwiperView: CardSwiperView!
-    /// Indicates if side swiping on cards is enabled. Default is `true`.
-    public var isSideSwipingEnabled: Bool = true
+    public var cardStackView: CardStackView!
     /// The currently focussed card index.
     public var focussedCardIndex: Int? {
-        let center = self.convert(self.cardSwiperView.center, to: self.cardSwiperView)
-        if let indexPath = self.cardSwiperView.indexPathForItem(at: center) {
+        let center = self.convert(self.cardStackView.center, to: self.cardStackView)
+        if let indexPath = self.cardStackView.indexPathForItem(at: center) {
             return indexPath.row
         }
         return nil
@@ -119,11 +116,11 @@ public class CardSwiper: UIView {
 
     public override func layoutSubviews() {
         super.layoutSubviews()
-        self.cardSwiperView.delegate = self
+        self.cardStackView.delegate = self
     }
 
     private func commonInit() {
-        setupCardSwiperView()
+        setupCardStackView()
         setupConstraints()
         setCardSwiperInsets()
         setupGestureRecognizer()
@@ -131,7 +128,7 @@ public class CardSwiper: UIView {
 
 }
 
-extension CardSwiper: UIGestureRecognizerDelegate {
+extension CardStack: UIGestureRecognizerDelegate {
 
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
@@ -140,12 +137,12 @@ extension CardSwiper: UIGestureRecognizerDelegate {
     fileprivate func setupGestureRecognizer() {
         tapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(handleTap))
         tapGestureRecognizer.delegate = self
-        cardSwiperView.addGestureRecognizer(tapGestureRecognizer)
-        cardSwiperView.panGestureRecognizer.maximumNumberOfTouches = 1
+        cardStackView.addGestureRecognizer(tapGestureRecognizer)
+        cardStackView.panGestureRecognizer.maximumNumberOfTouches = 1
         
         let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeAction(swipe:)))
         leftSwipe.direction = UISwipeGestureRecognizer.Direction.left
-        cardSwiperView.addGestureRecognizer(leftSwipe)
+        cardStackView.addGestureRecognizer(leftSwipe)
         
     }
 
@@ -157,42 +154,42 @@ extension CardSwiper: UIGestureRecognizerDelegate {
         if let delegate = delegate {
             if let wasTapped = delegate.didTapCard {
                 /// The taplocation relative to the collectionView.
-                let locationInCollectionView = sender.location(in: cardSwiperView)
+                let locationInCollectionView = sender.location(in: cardStackView)
 
-                if let tappedCardIndex = cardSwiperView.indexPathForItem(at: locationInCollectionView) {
-                    wasTapped(cardSwiperView, tappedCardIndex.row)
+                if let tappedCardIndex = cardStackView.indexPathForItem(at: locationInCollectionView) {
+                    wasTapped(cardStackView, tappedCardIndex.row)
                 }
             }
         }
     }
 }
 
-extension CardSwiper: UICollectionViewDelegate, UICollectionViewDataSource {
+extension CardStack: UICollectionViewDelegate, UICollectionViewDataSource {
 
     public func scrollToCard(at index: Int, animated: Bool) -> Bool {
         guard
             let cellHeight = flowLayout.cellHeight,
             index >= 0,
             swipedCard == nil,
-            index < cardSwiperView.numberOfItems(inSection: 0)
+            index < cardStackView.numberOfItems(inSection: 0)
             else { return false }
         let y = CGFloat(index) * (cellHeight + flowLayout.minimumLineSpacing) - topInset
-        let point = CGPoint(x: cardSwiperView.contentOffset.x, y: y)
-        cardSwiperView.setContentOffset(point, animated: animated)
+        let point = CGPoint(x: cardStackView.contentOffset.x, y: y)
+        cardStackView.setContentOffset(point, animated: animated)
         return true
     }
 
     public func register(nib: UINib?, forCellWithReuseIdentifier identifier: String) {
-        self.cardSwiperView.register(nib, forCellWithReuseIdentifier: identifier)
+        self.cardStackView.register(nib, forCellWithReuseIdentifier: identifier)
     }
 
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return datasource?.numberOfCards(cardSwiperView: cardSwiperView) ?? 0
+        return datasource?.numberOfCards(cardStackView: cardStackView) ?? 0
     }
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // check card number
-        if let card = datasource?.cardForItemAt(cardSwiperView: cardSwiperView, cardForItemAt: indexPath.row) {
+        if let card = datasource?.cardForItemAt(cardStackView: cardStackView, cardForItemAt: indexPath.row) {
             return card
         }
         return CardCell()
@@ -200,17 +197,17 @@ extension CardSwiper: UICollectionViewDelegate, UICollectionViewDataSource {
 
     public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if !decelerate {
-            delegate?.didEndScroll?(cardSwiperView: cardSwiperView)
+            delegate?.didEndScroll?(cardStackView: cardStackView)
         }
     }
 
     public func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
-        delegate?.didEndScroll?(cardSwiperView: cardSwiperView)
+        delegate?.didEndScroll?(cardStackView: cardStackView)
     }
 }
 
 // Setup for CardCell
-extension CardSwiper: UICollectionViewDelegateFlowLayout {
+extension CardStack: UICollectionViewDelegateFlowLayout {
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let itemSize = calculateItemSize(for: indexPath.row)
@@ -233,39 +230,39 @@ extension CardSwiper: UICollectionViewDelegateFlowLayout {
         let yInsets = cardSpacing + visibleNextCardHeight + topInset
 
         // get size from delegate if the sizeForItem function is called.
-        if let customSize = delegate?.sizeForItem?(cardSwiperView: cardSwiperView, index: index) {
+        if let customSize = delegate?.sizeForItem?(cardStackView: cardStackView, index: index) {
             // set custom sizes and make sure sizes are not negative, if they are, don't subtract the insets.
             cellWidth = customSize.width - (customSize.width - xInsets > 0 ? xInsets : 0)
             cellHeight = customSize.height - (customSize.height - yInsets > 0 ? yInsets : 0)
         } else {
-            cellWidth = cardSwiperView.frame.size.width - xInsets
-            cellHeight = cardSwiperView.frame.size.height - yInsets
+            cellWidth = cardStackView.frame.size.width - xInsets
+            cellHeight = cardStackView.frame.size.height - yInsets
         }
         return CGSize(width: cellWidth, height: cellHeight)
     }
 
-    fileprivate func setupCardSwiperView() {
-        cardSwiperView = CardSwiperView(frame: self.frame, collectionViewLayout: flowLayout)
-        cardSwiperView.decelerationRate = UIScrollView.DecelerationRate.fast
-        cardSwiperView.backgroundColor = UIColor.clear
-        cardSwiperView.showsVerticalScrollIndicator = false
-        cardSwiperView.dataSource = self
-        self.addSubview(cardSwiperView)
+    fileprivate func setupCardStackView() {
+        cardStackView = CardStackView(frame: self.frame, collectionViewLayout: flowLayout)
+        cardStackView.decelerationRate = UIScrollView.DecelerationRate.fast
+        cardStackView.backgroundColor = UIColor.clear
+        cardStackView.showsVerticalScrollIndicator = false
+        cardStackView.dataSource = self
+        self.addSubview(cardStackView)
     }
 
     fileprivate func setupConstraints() {
-        cardSwiperView.translatesAutoresizingMaskIntoConstraints = false
+        cardStackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            self.cardSwiperView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            self.cardSwiperView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            self.cardSwiperView.topAnchor.constraint(equalTo: self.topAnchor),
-            self.cardSwiperView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
+            self.cardStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            self.cardStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            self.cardStackView.topAnchor.constraint(equalTo: self.topAnchor),
+            self.cardStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
         ])
     }
 
     fileprivate func setCardSwiperInsets() {
         let bottomInset = visibleNextCardHeight + flowLayout.minimumLineSpacing
-        cardSwiperView.contentInset = UIEdgeInsets(top: topInset, left: sideInset, bottom: bottomInset, right: sideInset)
+        cardStackView.contentInset = UIEdgeInsets(top: topInset, left: sideInset, bottom: bottomInset, right: sideInset)
     }
 }
 

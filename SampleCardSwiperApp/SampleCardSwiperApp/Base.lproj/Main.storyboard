@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRE-c2-sWU" customClass="CardSwiper" customModule="SampleCardSwiperApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRE-c2-sWU" customClass="CardStack" customModule="SampleCardSwiperApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="813.66666666666663"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="kRE-c2-sWU" secondAttribute="height" multiplier="383:793" id="Brp-Il-I0e"/>
@@ -38,7 +38,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cardSwiper" destination="kRE-c2-sWU" id="GeQ-4L-3aY"/>
+                        <outlet property="cardStack" destination="kRE-c2-sWU" id="GeQ-4L-3aY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

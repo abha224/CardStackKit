@@ -17,7 +17,6 @@ class SampleCardCell: CardCell {
     }
 
     override func layoutSubviews() {
-        // add rounding here
         let corners = UIBezierPath.init(roundedRect: self.bounds, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: 20, height: 20))
         let shape = CAShapeLayer.init()
         shape.path = corners.cgPath
