@@ -1,17 +1,6 @@
 # Cred-assignment-2023
 Assignment for cred application for iOS developer (2023).
 
-## Project goal and information
-To develop an abstraction layer for stack framework supporting expand & collapse state
-of view, Using that abstraction layer you can create one sample stack view
-implementation.
-
-## Requirements
-* iOS 16.0+
-* Swift 5
-
-## Installation
-
 ## Usage
 `CardStack` behaves like a standard `UICollectionView`. To use it inside your UIViewController:
 
@@ -25,8 +14,8 @@ class SampleViewController: UIViewController, CardStackDelegate, CardStackDataso
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        cardSwiper = VerticalCardSwiper(frame: self.view.bounds)
-        view.addSubview(cardSwiper)
+        cardStack = CardStack(frame: self.view.bounds)
+        view.addSubview(cardStack)
         cardStack.datasource = self
         
         // register cardcell for storyboard use
@@ -88,12 +77,12 @@ To handle swipe gestures, implement the `CardStackDelegate`
 
 
 ```swift
-class ViewController: UIViewController, VerticalCardSwiperDelegate {
+class ViewController: UIViewController, CardStackDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        cardSwiper.delegate = self
+        cardStack.delegate = self
     }
     
     
