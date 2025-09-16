@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sample View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SampleViewController" customModule="SampleCardSwiperApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="waP-NG-qoR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRE-c2-sWU" customClass="CardStack" customModule="SampleCardSwiperApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="813.66666666666663"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kRE-c2-sWU" secondAttribute="height" multiplier="383:793" id="Brp-Il-I0e"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tQb-Jw-KGX"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tQb-Jw-KGX" firstAttribute="trailing" secondItem="kRE-c2-sWU" secondAttribute="trailing" id="CJh-94-SOM"/>
+                            <constraint firstItem="kRE-c2-sWU" firstAttribute="centerY" secondItem="waP-NG-qoR" secondAttribute="centerY" id="JvX-zD-0KD"/>
+                            <constraint firstItem="kRE-c2-sWU" firstAttribute="centerX" secondItem="waP-NG-qoR" secondAttribute="centerX" id="jRT-RI-xAZ"/>
+                            <constraint firstItem="kRE-c2-sWU" firstAttribute="top" secondItem="tQb-Jw-KGX" secondAttribute="top" id="mjU-rJ-DYp"/>
+                            <constraint firstAttribute="bottom" secondItem="kRE-c2-sWU" secondAttribute="bottom" id="vKN-ut-stv"/>
+                            <constraint firstItem="kRE-c2-sWU" firstAttribute="leading" secondItem="tQb-Jw-KGX" secondAttribute="leading" id="yL9-Lx-0d6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardStack" destination="kRE-c2-sWU" id="GeQ-4L-3aY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129.00763358778624" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+</document>
