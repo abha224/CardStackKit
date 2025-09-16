@@ -1,5 +1,4 @@
-# Cred-assignment-2023
-Assignment for cred application for iOS developer (2023).
+#### CardStackKit: A Reusable, Animated Stack View Framework for iOS
 
 ## Project goal and information
 To develop an abstraction layer for stack framework supporting expand & collapse state
@@ -138,5 +137,5 @@ class SampleCardCell: CardCell {
 - [x] Code documentation in README.md file
 
 ## Author
-Abha Wadjikar, awadjikar@gmail.com
+Abha Wadjikar
 
